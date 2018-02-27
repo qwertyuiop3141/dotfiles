@@ -13,8 +13,9 @@ set t_Co=256
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set timeoutlen=150
-colorscheme delek
+set timeoutlen=400
+set ttimeoutlen=0
+colorscheme monokai
 %retab
 
 " noremap <leader> :YcmCompleter GetDoc <CR>
@@ -39,7 +40,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'mattn/emmet-vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-surround'
-" Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 " Plugin 'vim-syntastic/syntastic'
 Plugin 'takac/vim-hardtime'
 Plugin 'Yggdroot/indentLine'
@@ -63,5 +64,5 @@ highlight SignColumn ctermbg=None
 highlight SyntasticWarning guibg=#000000
 highlight SyntasticWarningSign guibg=#000000
 
-highlight VertSplit ctermfg=8 ctermbg=7
+highlight VertSplit ctermfg=0 ctermbg=7
 highlight StatusLine ctermfg=8 ctermbg=7
